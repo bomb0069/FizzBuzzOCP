@@ -11,4 +11,9 @@ public class FizzBuzzTest {
 		assertEquals("1", fizzBuzz.say(1));
 	}
 
+	@Test
+	public void test2ShouldbeReturn2 () {
+		FizzBuzz fizzBuzz = FizzBuzzFactory.create();
+		assertEquals("2", fizzBuzz.say(2));
+	}
 }
