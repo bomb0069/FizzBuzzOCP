@@ -7,6 +7,7 @@ public class FizzBuzzFactory {
 	
 	public static FizzBuzz create () {
 		List<Rule> rules = new ArrayList<Rule>();
+		rules.add(new FizzRule());
 		rules.add(new DefaultRule());
 		return new FizzBuzz(rules);
 	}
