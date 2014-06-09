@@ -21,7 +21,9 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void test5SouldBeBuzz () {
+	public void testBuzzRule () {
 		assertEquals("Buzz", fizzBuzz.say(5));
+		assertEquals("Buzz", fizzBuzz.say(10));
+		assertEquals("Buzz", fizzBuzz.say(20));
 	}
 }
