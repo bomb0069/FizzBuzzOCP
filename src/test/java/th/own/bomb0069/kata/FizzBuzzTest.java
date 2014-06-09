@@ -19,4 +19,9 @@ public class FizzBuzzTest {
 		assertEquals("Fizz", fizzBuzz.say(6));
 		assertEquals("Fizz", fizzBuzz.say(9));
 	}
+
+	@Test
+	public void test5SouldBeBuzz () {
+		assertEquals("Buzz", fizzBuzz.say(5));
+	}
 }
