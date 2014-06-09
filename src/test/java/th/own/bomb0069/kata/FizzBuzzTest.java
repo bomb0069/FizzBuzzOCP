@@ -8,17 +8,15 @@ public class FizzBuzzTest {
 	FizzBuzz fizzBuzz = FizzBuzzFactory.create();
 	
 	@Test
-	public void test1ShouldbeReturn1 () {
+	public void testDefaultRule () {
 		assertEquals("1", fizzBuzz.say(1));
-	}
-
-	@Test
-	public void test2ShouldbeReturn2 () {
 		assertEquals("2", fizzBuzz.say(2));
 	}
 
 	@Test
-	public void test3ShouldbeReturnFizz () {
+	public void testFizzRule () {
 		assertEquals("Fizz", fizzBuzz.say(3));
+		assertEquals("Fizz", fizzBuzz.say(6));
+		assertEquals("Fizz", fizzBuzz.say(9));
 	}
 }
